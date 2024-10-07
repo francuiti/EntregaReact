@@ -1,14 +1,16 @@
-import NavBar from './NavBar'; // Asegúrate de la ruta correcta
-import ItemListContainer from './ItemListContainer'; // Asegúrate de la ruta correcta
-import './App.css';
+import NavBar from './Components/NavBar/NavBar'
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
+import './App.css'
 
 function App() {
-    return (
-        <div>
-            <NavBar />
-            <ItemListContainer greeting="¡Bienvenido a la tienda!" />
-        </div>
-    );
+
+  return (
+    <div className='container-app'>
+      <NavBar />
+      <ItemListContainer saludo={"Los mejores productos de limpieza"} />
+
+    </div>
+  )
 }
 
-export default App;
+export default App
